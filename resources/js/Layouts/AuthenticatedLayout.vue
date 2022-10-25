@@ -28,12 +28,7 @@ const showingNavigationDropdown = ref(false);
 
                             <!-- Navigation Links -->
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                                <!-- <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                    Dashboard
-                                </NavLink>
-                                <NavLink :href="route('about')" :active="route().current('about')">
-                                    About
-                                </NavLink> -->
+                 
                                 <NavLink :href="route('chat')" :active="route().current('chat')">
                                     Chat Uniciencia
                                 </NavLink>
@@ -80,9 +75,10 @@ const showingNavigationDropdown = ref(false);
                 <!-- Responsive Navigation Menu -->
                 <div :class="{'block': showingNavigationDropdown, 'hidden': ! showingNavigationDropdown}" class="sm:hidden">
                     <div class="pt-2 pb-3 space-y-1">
-                        <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                            Dashboard
-                        </ResponsiveNavLink>
+     
+                        <ResponsiveNavLink :href="route('chat')" :active="route().current('chat')">
+                                    Chat Uniciencia
+                                </ResponsiveNavLink>
                     </div>
 
                     <!-- Responsive Settings Options -->
